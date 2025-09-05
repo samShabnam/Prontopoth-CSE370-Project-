@@ -1,0 +1,129 @@
+/* Use classes only */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background-color: #0b3d2e;
+  color: #ffffff;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-brand {
+  font-weight: 800;
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  border: 1px solid #ffffff;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.container {
+  max-width: 980px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+.home {
+  text-align: center;
+  padding: 80px 16px;
+}
+
+.home-title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.home-subtitle {
+  font-size: 18px;
+  color: #333333;
+}
+
+.form-card {
+  max-width: 520px;
+  margin: 30px auto;
+  border: 1px solid #e2e8f0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.form-label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-input {
+  padding: 10px;
+  border: 1px solid #e4e9f2;
+  border-radius: 6px;
+}
+
+.form-button {
+  display: inline-block;
+  background-color: #0b3d2e;
+  color: #ffffff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th, .table td {
+  border: 1px solid #e2e8f0;
+  padding: 10px;
+  text-align: left;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+}
+
+.footer {
+  text-align: center;
+  color: #64748b;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top: 1px solid #e2e8f0;
+}
+.divider {
+  border: 0;
+  border-top: 2px solid #1f2937;
+  margin: 20px 0 0;
+}
