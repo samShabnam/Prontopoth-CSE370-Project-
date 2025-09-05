@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="form-card">
+    <h2>Sign Up</h2>
+    <form method="post">
+      <div class="form-row">
+        <label class="form-label">Name</label>
+        <input class="form-input" type="text" name="name" required>
+      </div>
+      <div class="form-row">
+        <label class="form-label">NID</label>
+        <input class="form-input" type="text" name="nid" required>
+      </div>
+      <div class="form-row">
+        <label class="form-label">Email</label>
+        <input class="form-input" type="email" name="email" required>
+      </div>
+      <div class="form-row">
+        <label class="form-label">Phone (Optional)</label>
+        <input class="form-input" type="text" name="phone">
+      </div>
+      <div class="form-row">
+        <label class="form-label">Password</label>
+        <input class="form-input" type="password" name="password" required>
+      </div>
+      <button class="form-button" type="submit">Create Account</button>
+    </form>
+  </div>
+{% endblock %}

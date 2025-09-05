@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="form-card">
+    <h2>Edit Profile</h2>
+    <form method="post" enctype="multipart/form-data">
+      <div class="form-row">
+        <label class="form-label">Name</label>
+        <input class="form-input" type="text" name="name" value="{{ user.name }}" required>
+      </div>
+      <div class="form-row">
+        <label class="form-label">NID</label>
+        <input class="form-input" type="text" name="nid" value="{{ user.nid }}" required>
+      </div>
+      <div class="form-row">
+        <label class="form-label">Email</label>
+        <input class="form-input" type="email" name="email" value="{{ user.email }}" required>
+      </div>
+      <div class="form-row">
+        <label class="form-label">Phone</label>
+        <input class="form-input" type="text" name="phone" value="{{ user.phone or '' }}">
+      </div>
+      <div class="form-row">
+        <label class="form-label">Upload Profile Picture</label>
+        <input class="form-input" type="file" name="profile_pic" accept="image/*">
+      </div>
+      <p><em>Note:</em> Role cannot be edited.</p>
+      <button class="form-button" type="submit">Save Changes</button>
+    </form>
+  </div>
+{% endblock %}

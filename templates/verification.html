@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="form-card">
+    <h2>Email Verification</h2>
+    <p>We sent a 6-digit OTP to <strong>{{ email }}</strong>. Please enter it below.</p>
+    <form method="post">
+      <input type="hidden" name="email" value="{{ email }}">
+      <div class="form-row">
+        <label class="form-label">Enter OTP</label>
+        <input class="form-input" type="text" name="otp" inputmode="numeric" required>
+      </div>
+      <button class="form-button" type="submit">Verify</button>
+    </form>
+  </div>
+{% endblock %}

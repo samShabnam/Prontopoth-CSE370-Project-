@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Your Profile</h2>
+  <table class="table">
+    <tr><th>Name</th><td>{{ user.name }}</td></tr>
+    <tr><th>NID</th><td>{{ user.nid }}</td></tr>
+    <tr><th>Email</th><td>{{ user.email }}</td></tr>
+    <tr><th>Phone</th><td>{{ user.phone or '' }}</td></tr>
+    <tr><th>Role</th><td>{{ user.role }}</td></tr>
+    <tr>
+      <th>Profile Picture</th>
+      <td>
+        {% if user.profile_pic %}
+          <img class="profile-pic" src="{{ url_for('static', filename='uploads/' ~ user.profile_pic) }}" alt="Profile picture">
+        {% else %}
+          <span>No picture uploaded yet.</span>
+        {% endif %}
+      </td>
+    </tr>
+    <tr><th>Verified</th><td>{{ 'Yes' if user.is_verified else 'No' }}</td></tr>
+  </table>
+
+  <br>
+  <a class="form-button" href="{{ url_for('edit_profile') }}">Edit Profile</a>
+
+
+{% endblock %}
